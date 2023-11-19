@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper .login-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.wrapper .login-container .title {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+.wrapper .login-container .text {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.wrapper .login-container input {
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 7px;
+  background: #1618230f;
+  border: #1618230f;
+  border-radius: 5px;
+  width: 100%;
+  &:hover {
+    background-color: #dedede;
+  }
+}
+
+.wrapper .login-container .input-password{
+  position: relative;
+}
+.wrapper .login-container .input-password i{
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.wrapper .login-container button {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  &.active{
+    background-color: #fe2c55;
+    color: #ffffff;
+  }
+}
+.wrapper .login-container button[disabled=disabled], button:disabled{
+  cursor: not-allowed;
+}
+
+.wrapper .login-container .back {
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
