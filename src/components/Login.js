@@ -16,7 +16,7 @@ const Login = () => {
             toast.error("Email/Password is required!");
             return;
         }
-        if (email.trim() === "admin" && password === "1234") {
+        if (email.trim() === "admin" && password === "5140") {
             loginContext(email);
             toast.success("Login succeed");
             navigate("/");
